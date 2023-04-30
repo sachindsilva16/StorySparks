@@ -1,0 +1,22 @@
+<%- include("partials/header"); %>
+
+    <h1>Compose</h1>
+    <form action="/compose" method="post" class="box">
+        <div class="col-md-12 input-field">
+            <label for="inputTitle">Title</label>
+            <input class="form-control" id="inputTitle" type="text" name="postTitle"
+                placeholder="Enter a title" autocomplete="off">
+        </div>
+
+        <div class="col-md-12 ">
+            <label for="inputPost">Post</label>
+            <textarea class="form-control" name="postBody" id="inputPost" rows="5" placeholder="Compose your post here.."></textarea>
+
+        </div>
+
+        <div class="col-md-12">
+            <button class="btn btn-primary btn-md">Publish</button>
+        </div>
+    </form>
+
+    <%- include("partials/footer"); %>
