@@ -5,6 +5,7 @@ const content = require(__dirname + "/content.js");
 const app = express();
 const port = process.env.PORT || 3000;
 const _ = require('lodash');
+const { homeStartingContent2 } = require('./content');
 
 
 
@@ -41,15 +42,17 @@ app.get("/", (req, res) => {
 //  :: GET REQUEST --> HOME ::
 
 app.get("/home", (req, res) => {
-    let homeStartingContent = content.homeStartingContent();
+    let homeStartingContentOne = content.homeStartingContentOne();
+    let homeStartingContentTwo = content.homeStartingContentTwo();
     let postTitle = "";
     posts.forEach(function(post){
         postTitle = _.kebabCase(post.title);
     })
     res.render("home", {
-        getHomeContent: homeStartingContent,
+        getHomeContentOne: homeStartingContentOne,
         newPosts: posts,
-        postTitleCase : postTitle
+        postTitleCase : postTitle,
+        getHomeContentTwo:homeStartingContentTwo
     });
 });
 

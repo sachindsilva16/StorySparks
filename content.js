@@ -1,9 +1,15 @@
-module.exports.homeStartingContent = () => {
+module.exports.homeStartingContentOne = () => {
 
-    let content = "Sed ut perspiciatis unde omnis iste natus error sit volup velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure.";
+    let content = "Welcome to my Story Sparks, your go-to destination for discovering, sharing, and engaging with captivating content. Whether you're a seasoned blogger looking to share your insights or a curious reader seeking inspiration, our platform offers a diverse collection of blog posts to explore.";
 
     return content;
 
+}
+
+module.exports.homeStartingContentTwo = () =>{
+    let content = "Ready to embark on your blogging journey? Sign up now to create an account and start sharing your voice with the world. Whether you're a seasoned writer or just starting out, our platform welcomes creators of all levels. Join us and become part of a community that celebrates creativity, diversity, and expression.";
+
+    return content;
 }
 
 module.exports.aboutContent = () => {
